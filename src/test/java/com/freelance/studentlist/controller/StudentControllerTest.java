@@ -32,10 +32,6 @@ public class StudentControllerTest {
     WebTestClient webTestClient;
 
     @MockBean
-    TransactionTemplate transactionTemplate;
-
-
-    @MockBean
     private StudentService studentService;
 
     @Test

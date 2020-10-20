@@ -1,0 +1,1 @@
+CREATE TABLE student (id BIGINT auto_increment NOT NULL, age INTEGER NOT NULL, name VARCHAR(255) NOT NULL, surname VARCHAR(255) NOT NULL, PRIMARY KEY (id));

@@ -2,30 +2,20 @@ package com.freelance.studentlist.domain;
 
 import com.freelance.studentlist.exception.*;
 
-import com.sun.istack.NotNull;
-
-import javax.persistence.*;
+import org.springframework.data.annotation.Id;
 
 import java.util.Objects;
 
-@Entity
-@SequenceGenerator(initialValue = 1, name = "idgen", sequenceName = "studentseq")
-@Table(name = "STUDENT")
 public class Student {
 
-    @Id @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "idgen")
+    @Id
     private Long id;
 
-    @NotNull
     private String name;
 
-    @NotNull
     private String surname;
 
-    @NotNull
     private Integer age;
-
-    public Student() { }
 
     public Student(String name, String surname, Integer age) {
 
@@ -43,7 +33,6 @@ public class Student {
         if (surname == null || surname.isBlank()) throw new InvalidNewStudentSurnameException(surname);
 
         if (age == null || age < 16) throw new InvalidNewStudentAgeException(age);
-
     }
 
     @Override

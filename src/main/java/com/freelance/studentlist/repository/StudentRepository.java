@@ -2,8 +2,8 @@ package com.freelance.studentlist.repository;
 
 import com.freelance.studentlist.domain.Student;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.reactive.ReactiveCrudRepository;
 
-public interface StudentRepository extends CrudRepository<Student, Long> {
+public interface StudentRepository extends ReactiveCrudRepository<Student, Long> {
 
 }
