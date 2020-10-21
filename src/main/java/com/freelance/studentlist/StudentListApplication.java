@@ -2,19 +2,19 @@ package com.freelance.studentlist;
 
 import com.freelance.studentlist.domain.Student;
 import com.freelance.studentlist.repository.StudentRepository;
-import io.r2dbc.spi.ConnectionFactory;
-
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-import org.springframework.core.io.ClassPathResource;
-
-import org.springframework.data.r2dbc.connectionfactory.init.ConnectionFactoryInitializer;
-import org.springframework.data.r2dbc.connectionfactory.init.ResourceDatabasePopulator;
 
 import java.time.Duration;
 import java.util.Arrays;
+
+import io.r2dbc.spi.ConnectionFactory;
+
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.data.r2dbc.connectionfactory.init.ConnectionFactoryInitializer;
+import org.springframework.data.r2dbc.connectionfactory.init.ResourceDatabasePopulator;
 
 @SpringBootApplication
 public class StudentListApplication {

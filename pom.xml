@@ -35,7 +35,6 @@
             <groupId>io.r2dbc</groupId>
             <artifactId>r2dbc-h2</artifactId>
             <version>0.8.4.RELEASE</version>
-            <scope>runtime</scope>
         </dependency>
 
         <dependency>

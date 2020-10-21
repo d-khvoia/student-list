@@ -3,9 +3,11 @@ package com.freelance.studentlist.domain;
 import com.freelance.studentlist.exception.*;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
 
 import java.util.Objects;
 
+@Table
 public class Student {
 
     @Id

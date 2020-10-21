@@ -1,24 +1,19 @@
 Primary sources viewed and used:
 
-1. https://stackoverflow.com/a/52481072/13883980
-2. https://github.com/chang-chao/spring-webflux-reactive-jdbc-sample
-3. https://blog.knoldus.com/spring-webflux-how-to-test-your-controllers-using-webtestclient/
-4. https://howtodoinjava.com/spring-webflux/webfluxtest-with-webtestclient/
+1. https://stackoverflow.com/questions/64444279/problem-extending-spring-webflux-application-with-reactive-db-client
+2. https://github.com/eugenp/tutorials/tree/master/spring-5-data-reactive
+3. https://spring.io/projects/spring-data-r2dbc
+4. https://spring.io/guides/gs/accessing-data-r2dbc/
 
 Secondary sources viewed (some used):
 
-1. https://www.baeldung.com/spring-webflux
-2. https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/web-reactive.html#webflux
-3. https://howtodoinjava.com/spring-webflux/spring-webflux-tutorial/
-4. https://spring.io/guides/gs/reactive-rest-service/
-5. https://github.com/eugenp/tutorials/tree/master/spring-5-reactive-security
-6. https://stackoverflow.com/questions/8970008/can-we-rely-on-string-isempty-for-checking-null-condition-on-a-string-in-java
-7. https://www.baeldung.com/spring-5-reactive-websockets
-8. https://restfulapi.net/rest-put-vs-post/
-9. https://coderoad.ru/52480271/Spring-Webflux-JPA-реактивные-репозитории-не-поддерживаются-JPA
-10. https://www.baeldung.com/kotlin-mongodb-spring-webflux
-11. https://github.com/eugenp/tutorials/tree/master/spring-5-data-reactive
-12. https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/testing.html#webtestclient
-13. https://stackoverflow.com/questions/58409743/spring-webflux-webtestclient-with-query-parameter
-14. https://stackoverflow.com/questions/60421302/spring-boot-handling-multiple-parameters-in-a-get-request
-15. !?! https://github.com/spring-projects/spring-framework/issues/21588 !?!
+1. https://www.baeldung.com/spring-data-r2dbc
+2. https://docs.spring.io/spring-data/r2dbc/docs/1.1.3.RELEASE/reference/html/#reference
+3. https://docs.spring.io/spring-data/r2dbc/docs/1.1.3.RELEASE/reference/html/#r2dbc.datbaseclient.fluent-api.insert
+4. https://stackoverflow.com/questions/36244641/h2-equivalent-of-postgres-serial-or-bigserial-column
+5. https://stackoverflow.com/questions/51730983/cannot-resolve-class-or-package-h2
+6. https://medium.com/@hantsy/reactive-accessing-rdbms-with-spring-data-r2dbc-d6e453f2837e
+7. https://www.baeldung.com/r2dbc
+8. https://dimitr.im/reactive-relational-databases-r2dbc-spring
+9. https://github.com/g00glen00b/spring-samples/tree/master/spring-boot-r2dbc
+10. https://github.com/r2dbc/r2dbc-h2/issues/150
