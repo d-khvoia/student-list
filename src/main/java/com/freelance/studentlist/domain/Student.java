@@ -4,6 +4,7 @@ import com.freelance.studentlist.exception.*;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
+
 import org.springframework.http.HttpStatus;
 
 import java.util.Objects;

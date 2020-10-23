@@ -2,9 +2,6 @@ package com.freelance.studentlist.controller;
 
 import com.freelance.studentlist.domain.Student;
 import com.freelance.studentlist.exception.InvalidInputException;
-import com.freelance.studentlist.exception.InvalidNewStudentAgeException;
-import com.freelance.studentlist.exception.InvalidNewStudentNameException;
-import com.freelance.studentlist.exception.InvalidNewStudentSurnameException;
 import com.freelance.studentlist.service.StudentService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +10,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
