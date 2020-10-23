@@ -34,14 +34,14 @@ public class StudentController {
         try {
             return studentService.add(name, surname, age).map(student -> student.getId());
         }
-        catch (InvalidNewStudentAgeException e) {
-            return Mono.error(new InvalidNewStudentAgeException(age));
+        catch (InvalidNewStudentAgeException invNewStudAgeEx) {
+            return Mono.error(invNewStudAgeEx);
         }
-        catch (InvalidNewStudentNameException e) {
-            return Mono.error(new InvalidNewStudentNameException(name));
+        catch (InvalidNewStudentNameException invNewStudNameEx) {
+            return Mono.error(invNewStudNameEx);
         }
-        catch (InvalidNewStudentSurnameException e) {
-            return Mono.error(new InvalidNewStudentNameException(surname));
+        catch (InvalidNewStudentSurnameException invNewStudSurnameEx) {
+            return Mono.error(invNewStudSurnameEx);
         }
     }
 
