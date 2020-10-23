@@ -1,6 +1,7 @@
 package com.freelance.studentlist.controller;
 
 import com.freelance.studentlist.domain.Student;
+import com.freelance.studentlist.exception.InvalidInputException;
 import com.freelance.studentlist.exception.InvalidNewStudentAgeException;
 import com.freelance.studentlist.exception.InvalidNewStudentNameException;
 import com.freelance.studentlist.exception.InvalidNewStudentSurnameException;
@@ -34,38 +35,16 @@ public class StudentController {
         try {
             return studentService.add(name, surname, age).map(student -> student.getId());
         }
-        catch (InvalidNewStudentAgeException invNewStudAgeEx) {
-            return Mono.error(invNewStudAgeEx);
-        }
-        catch (InvalidNewStudentNameException invNewStudNameEx) {
-            return Mono.error(invNewStudNameEx);
-        }
-        catch (InvalidNewStudentSurnameException invNewStudSurnameEx) {
-            return Mono.error(invNewStudSurnameEx);
+        catch (InvalidInputException invalidInputException) {
+            return Mono.error(invalidInputException);
         }
     }
 
     @ResponseStatus(
-      value = HttpStatus.BAD_REQUEST,
-      reason = "Invalid student's age: age should not be empty or less than 16.")
-    @ExceptionHandler(InvalidNewStudentAgeException.class)
-    public void invalidNewStudentAgeHandler() {
-
-    }
-
-    @ResponseStatus(
-      value = HttpStatus.BAD_REQUEST,
-      reason = "Invalid student's name: the name should not be empty.")
-    @ExceptionHandler(InvalidNewStudentNameException.class)
-    public void invalidNewStudentNameHandler() {
-
-    }
-
-    @ResponseStatus(
-      value = HttpStatus.BAD_REQUEST,
-      reason = "Invalid student's surname: the surname should not be empty.")
-    @ExceptionHandler(InvalidNewStudentSurnameException.class)
-    public void invalidNewStudentSurnameHandler() {
-
+      value = HttpStatus.UNPROCESSABLE_ENTITY,
+      reason = "Invalid input data for new student.")
+    @ExceptionHandler(InvalidInputException.class)
+    public ResponseEntity invalidInputHandler(InvalidInputException e) {
+        return ResponseEntity.status(e.getHttpStatus()).body(e.getMessage());
     }
 }

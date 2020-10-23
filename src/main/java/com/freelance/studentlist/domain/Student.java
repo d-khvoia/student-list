@@ -4,6 +4,7 @@ import com.freelance.studentlist.exception.*;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
+import org.springframework.http.HttpStatus;
 
 import java.util.Objects;
 
@@ -30,11 +31,11 @@ public class Student {
 
     private void validateInput(String name, String surname, Integer age) {
 
-        if (name == null || name.isBlank()) throw new InvalidNewStudentNameException(name);
+        if (name == null || name.isBlank()) throw new InvalidNewStudentNameException(HttpStatus.UNPROCESSABLE_ENTITY, name);
 
-        if (surname == null || surname.isBlank()) throw new InvalidNewStudentSurnameException(surname);
+        if (surname == null || surname.isBlank()) throw new InvalidNewStudentSurnameException(HttpStatus.UNPROCESSABLE_ENTITY, surname);
 
-        if (age == null || age < 16) throw new InvalidNewStudentAgeException(age);
+        if (age == null || age < 16) throw new InvalidNewStudentAgeException(HttpStatus.UNPROCESSABLE_ENTITY, age);
     }
 
     @Override

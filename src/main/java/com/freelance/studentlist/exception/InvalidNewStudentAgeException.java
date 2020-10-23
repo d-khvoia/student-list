@@ -1,9 +1,11 @@
 package com.freelance.studentlist.exception;
 
-public class InvalidNewStudentAgeException extends RuntimeException {
+import org.springframework.http.HttpStatus;
 
-    public InvalidNewStudentAgeException(Integer age) {
+public class InvalidNewStudentAgeException extends InvalidInputException {
 
-        super("Could not create a student: student's age, " + age + ", should not be empty or less than 16.");
+    public InvalidNewStudentAgeException(HttpStatus httpStatus, Integer age) {
+        super(httpStatus, "Could not create a student: student's age, " + age + ", should not be empty or less than 16.");
     }
+
 }

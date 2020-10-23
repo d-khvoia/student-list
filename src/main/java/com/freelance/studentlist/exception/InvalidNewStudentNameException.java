@@ -1,9 +1,10 @@
 package com.freelance.studentlist.exception;
 
-public class InvalidNewStudentNameException extends RuntimeException {
+import org.springframework.http.HttpStatus;
 
-    public InvalidNewStudentNameException(String name) {
+public class InvalidNewStudentNameException extends InvalidInputException {
 
-        super("Could not create a student: student's name, " + name + ", should not be empty.");
+    public InvalidNewStudentNameException(HttpStatus httpStatus, String name) {
+        super(httpStatus, "Could not create a student: student's name, " + name + ", should not be empty.");
     }
 }
