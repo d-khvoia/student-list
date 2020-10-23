@@ -1,19 +1,13 @@
 Primary sources viewed and used:
 
-1. https://stackoverflow.com/questions/64444279/problem-extending-spring-webflux-application-with-reactive-db-client
-2. https://github.com/eugenp/tutorials/tree/master/spring-5-data-reactive
-3. https://spring.io/projects/spring-data-r2dbc
-4. https://spring.io/guides/gs/accessing-data-r2dbc/
+1. https://stackoverflow.com/questions/51762481/how-can-i-add-custom-message-after-http-status-code
+2. https://stackoverflow.com/questions/64485948/
 
 Secondary sources viewed (some used):
 
-1. https://www.baeldung.com/spring-data-r2dbc
-2. https://docs.spring.io/spring-data/r2dbc/docs/1.1.3.RELEASE/reference/html/#reference
-3. https://docs.spring.io/spring-data/r2dbc/docs/1.1.3.RELEASE/reference/html/#r2dbc.datbaseclient.fluent-api.insert
-4. https://stackoverflow.com/questions/36244641/h2-equivalent-of-postgres-serial-or-bigserial-column
-5. https://stackoverflow.com/questions/51730983/cannot-resolve-class-or-package-h2
-6. https://medium.com/@hantsy/reactive-accessing-rdbms-with-spring-data-r2dbc-d6e453f2837e
-7. https://www.baeldung.com/r2dbc
-8. https://dimitr.im/reactive-relational-databases-r2dbc-spring
-9. https://github.com/g00glen00b/spring-samples/tree/master/spring-boot-r2dbc
-10. https://github.com/r2dbc/r2dbc-h2/issues/150
+1. https://www.baeldung.com/spring-webflux-errors
+2. https://www.baeldung.com/spring-response-status-exception
+3. https://dzone.com/articles/error-handling-in-spring-webflux
+4. https://www.youtube.com/watch?v=YW5AqKI9w-0
+5. https://www.baeldung.com/spring-webflux-404
+6. https://www.baeldung.com/exception-handling-for-rest-with-spring
